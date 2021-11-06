@@ -18,6 +18,7 @@ playground.xcworkspace
  Package.resolved
  *.xcodeproj
  .swiftpm
+ *.xcuserstate
 
 .build/
 
