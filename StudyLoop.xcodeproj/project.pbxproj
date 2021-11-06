@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		448403B22736A458009EE201 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448403B12736A458009EE201 /* AppDelegate.swift */; };
-		448403B42736A458009EE201 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448403B32736A458009EE201 /* SceneDelegate.swift */; };
-		448403B62736A458009EE201 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448403B52736A458009EE201 /* ViewController.swift */; };
-		448403B92736A458009EE201 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 448403B72736A458009EE201 /* Main.storyboard */; };
 		448403BB2736A45A009EE201 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 448403BA2736A45A009EE201 /* Assets.xcassets */; };
 		448403BE2736A45A009EE201 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 448403BC2736A45A009EE201 /* LaunchScreen.storyboard */; };
 		448403D72736ADE2009EE201 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 448403D62736ADE2009EE201 /* SnapKit */; };
+		448403EA2736B2D0009EE201 /* MainFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448403E92736B2D0009EE201 /* MainFlow.swift */; };
+		448403ED2736B4CF009EE201 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448403EC2736B4CF009EE201 /* TabBarViewController.swift */; };
+		448403EF2736B522009EE201 /* TabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448403EE2736B522009EE201 /* TabBarViewModel.swift */; };
+		448403F12736B538009EE201 /* TabBarResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448403F02736B538009EE201 /* TabBarResources.swift */; };
+		448403F32736B54D009EE201 /* TabBarFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448403F22736B54D009EE201 /* TabBarFactory.swift */; };
 		8B5105E31658DCBA7EAB2272 /* Pods_StudyLoop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39BD577421C67135728FD141 /* Pods_StudyLoop.framework */; };
 /* End PBXBuildFile section */
 
@@ -22,12 +24,14 @@
 		39BD577421C67135728FD141 /* Pods_StudyLoop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StudyLoop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		448403AE2736A458009EE201 /* StudyLoop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudyLoop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		448403B12736A458009EE201 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		448403B32736A458009EE201 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		448403B52736A458009EE201 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		448403B82736A458009EE201 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		448403BA2736A45A009EE201 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		448403BD2736A45A009EE201 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		448403BF2736A45A009EE201 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		448403E92736B2D0009EE201 /* MainFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlow.swift; sourceTree = "<group>"; };
+		448403EC2736B4CF009EE201 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		448403EE2736B522009EE201 /* TabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewModel.swift; sourceTree = "<group>"; };
+		448403F02736B538009EE201 /* TabBarResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarResources.swift; sourceTree = "<group>"; };
+		448403F22736B54D009EE201 /* TabBarFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarFactory.swift; sourceTree = "<group>"; };
 		660C4CF2C0D9853E469B1507 /* Pods-StudyLoop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyLoop.debug.xcconfig"; path = "Target Support Files/Pods-StudyLoop/Pods-StudyLoop.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,14 +70,48 @@
 			isa = PBXGroup;
 			children = (
 				448403B12736A458009EE201 /* AppDelegate.swift */,
-				448403B32736A458009EE201 /* SceneDelegate.swift */,
-				448403B52736A458009EE201 /* ViewController.swift */,
-				448403B72736A458009EE201 /* Main.storyboard */,
-				448403BA2736A45A009EE201 /* Assets.xcassets */,
+				448403E72736B1F4009EE201 /* Source */,
+				448403E62736B1D5009EE201 /* Resources */,
 				448403BC2736A45A009EE201 /* LaunchScreen.storyboard */,
 				448403BF2736A45A009EE201 /* Info.plist */,
 			);
 			path = StudyLoop;
+			sourceTree = "<group>";
+		};
+		448403E62736B1D5009EE201 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				448403BA2736A45A009EE201 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		448403E72736B1F4009EE201 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				448403EB2736B4B4009EE201 /* TabBarController */,
+				448403E82736B2C1009EE201 /* MainFlow */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		448403E82736B2C1009EE201 /* MainFlow */ = {
+			isa = PBXGroup;
+			children = (
+				448403E92736B2D0009EE201 /* MainFlow.swift */,
+			);
+			path = MainFlow;
+			sourceTree = "<group>";
+		};
+		448403EB2736B4B4009EE201 /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				448403F22736B54D009EE201 /* TabBarFactory.swift */,
+				448403F02736B538009EE201 /* TabBarResources.swift */,
+				448403EE2736B522009EE201 /* TabBarViewModel.swift */,
+				448403EC2736B4CF009EE201 /* TabBarViewController.swift */,
+			);
+			path = TabBarController;
 			sourceTree = "<group>";
 		};
 		7BC111311712C18AE9708F8F /* Pods */ = {
@@ -82,7 +120,6 @@
 				660C4CF2C0D9853E469B1507 /* Pods-StudyLoop.debug.xcconfig */,
 				12DDD310D2A70539F711ABD5 /* Pods-StudyLoop.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -143,7 +180,7 @@
 			);
 			mainGroup = 448403A52736A458009EE201;
 			packageReferences = (
-				448403D52736ADE2009EE201 /* XCRemoteSwiftPackageReference "SnapKit.git" */,
+				448403D52736ADE2009EE201 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = 448403AF2736A458009EE201 /* Products */;
 			projectDirPath = "";
@@ -161,7 +198,6 @@
 			files = (
 				448403BE2736A45A009EE201 /* LaunchScreen.storyboard in Resources */,
 				448403BB2736A45A009EE201 /* Assets.xcassets in Resources */,
-				448403B92736A458009EE201 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,23 +233,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				448403B62736A458009EE201 /* ViewController.swift in Sources */,
+				448403EF2736B522009EE201 /* TabBarViewModel.swift in Sources */,
+				448403ED2736B4CF009EE201 /* TabBarViewController.swift in Sources */,
+				448403F12736B538009EE201 /* TabBarResources.swift in Sources */,
+				448403EA2736B2D0009EE201 /* MainFlow.swift in Sources */,
+				448403F32736B54D009EE201 /* TabBarFactory.swift in Sources */,
 				448403B22736A458009EE201 /* AppDelegate.swift in Sources */,
-				448403B42736A458009EE201 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		448403B72736A458009EE201 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				448403B82736A458009EE201 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		448403BC2736A45A009EE201 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -354,7 +385,7 @@
 				INFOPLIST_FILE = StudyLoop/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -383,7 +414,7 @@
 				INFOPLIST_FILE = StudyLoop/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -423,7 +454,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		448403D52736ADE2009EE201 /* XCRemoteSwiftPackageReference "SnapKit.git" */ = {
+		448403D52736ADE2009EE201 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
 			requirement = {
@@ -436,7 +467,7 @@
 /* Begin XCSwiftPackageProductDependency section */
 		448403D62736ADE2009EE201 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 448403D52736ADE2009EE201 /* XCRemoteSwiftPackageReference "SnapKit.git" */;
+			package = 448403D52736ADE2009EE201 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
