@@ -16,6 +16,8 @@
 		448403EF2736B522009EE201 /* TabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448403EE2736B522009EE201 /* TabBarViewModel.swift */; };
 		448403F12736B538009EE201 /* TabBarResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448403F02736B538009EE201 /* TabBarResources.swift */; };
 		448403F32736B54D009EE201 /* TabBarFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448403F22736B54D009EE201 /* TabBarFactory.swift */; };
+		44C0ED482736F0D500A4294D /* Rswift in Frameworks */ = {isa = PBXBuildFile; productRef = 44C0ED472736F0D500A4294D /* Rswift */; };
+		44C0ED4B2736F21700A4294D /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C0ED4A2736F21700A4294D /* R.generated.swift */; };
 		8B5105E31658DCBA7EAB2272 /* Pods_StudyLoop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39BD577421C67135728FD141 /* Pods_StudyLoop.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +34,7 @@
 		448403EE2736B522009EE201 /* TabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewModel.swift; sourceTree = "<group>"; };
 		448403F02736B538009EE201 /* TabBarResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarResources.swift; sourceTree = "<group>"; };
 		448403F22736B54D009EE201 /* TabBarFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarFactory.swift; sourceTree = "<group>"; };
+		44C0ED4A2736F21700A4294D /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		660C4CF2C0D9853E469B1507 /* Pods-StudyLoop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyLoop.debug.xcconfig"; path = "Target Support Files/Pods-StudyLoop/Pods-StudyLoop.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -40,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44C0ED482736F0D500A4294D /* Rswift in Frameworks */,
 				448403D72736ADE2009EE201 /* SnapKit in Frameworks */,
 				8B5105E31658DCBA7EAB2272 /* Pods_StudyLoop.framework in Frameworks */,
 			);
@@ -82,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				448403BA2736A45A009EE201 /* Assets.xcassets */,
+				44C0ED4A2736F21700A4294D /* R.generated.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -138,6 +143,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 448403C22736A45A009EE201 /* Build configuration list for PBXNativeTarget "StudyLoop" */;
 			buildPhases = (
+				44C0ED492736F0DB00A4294D /* R.swift Script */,
 				52FCDD84A502E456C800852E /* [CP] Check Pods Manifest.lock */,
 				448403AA2736A458009EE201 /* Sources */,
 				448403AB2736A458009EE201 /* Frameworks */,
@@ -150,6 +156,7 @@
 			name = StudyLoop;
 			packageProductDependencies = (
 				448403D62736ADE2009EE201 /* SnapKit */,
+				44C0ED472736F0D500A4294D /* Rswift */,
 			);
 			productName = StudyLoop;
 			productReference = 448403AE2736A458009EE201 /* StudyLoop.app */;
@@ -181,6 +188,7 @@
 			mainGroup = 448403A52736A458009EE201;
 			packageReferences = (
 				448403D52736ADE2009EE201 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				44C0ED462736F0D500A4294D /* XCRemoteSwiftPackageReference "R.swift" */,
 			);
 			productRefGroup = 448403AF2736A458009EE201 /* Products */;
 			projectDirPath = "";
@@ -204,6 +212,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		44C0ED492736F0DB00A4294D /* R.swift Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = "R.swift Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/StudyLoop/Resources/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$SRCROOT/StudyLoop/Resources/rswift\" generate \"$SRCROOT/StudyLoop/Resources/R.generated.swift\"\n";
+		};
 		52FCDD84A502E456C800852E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -234,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				448403EF2736B522009EE201 /* TabBarViewModel.swift in Sources */,
+				44C0ED4B2736F21700A4294D /* R.generated.swift in Sources */,
 				448403ED2736B4CF009EE201 /* TabBarViewController.swift in Sources */,
 				448403F12736B538009EE201 /* TabBarResources.swift in Sources */,
 				448403EA2736B2D0009EE201 /* MainFlow.swift in Sources */,
@@ -462,6 +491,14 @@
 				kind = branch;
 			};
 		};
+		44C0ED462736F0D500A4294D /* XCRemoteSwiftPackageReference "R.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mac-cain13/R.swift.Library";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -469,6 +506,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 448403D52736ADE2009EE201 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		44C0ED472736F0D500A4294D /* Rswift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 44C0ED462736F0D500A4294D /* XCRemoteSwiftPackageReference "R.swift" */;
+			productName = Rswift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

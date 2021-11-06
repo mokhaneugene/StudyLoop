@@ -15,9 +15,4 @@ final class TabBarViewModel {
     init(handlers: TabBarResources.Handlers) {
         self.handlers = handlers
     }
-
-    // MARK: - Public methods
-    @objc func didTapButton() {
-        handlers.onTapButton()
-    }
 }

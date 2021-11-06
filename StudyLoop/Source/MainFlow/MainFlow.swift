@@ -34,11 +34,7 @@ private extension MainFlow {
 
     // TabBarController
     func createTabBarController() -> UITabBarController {
-        let handlers = TabBarResources.Handlers(
-            onTapButton: {
-                print("Hello world!")
-            }
-        )
+        let handlers = TabBarResources.Handlers()
         return TabBarFactory().makeController(handlers: handlers)
     }
 }
