@@ -15,17 +15,8 @@ final class TabBarViewContorller: UITabBarController {
     // MARK: - Configure
     func configure(viewModel: TabBarViewModel) {
         self.viewModel = viewModel
-    }
 
-    // MARK: - LifeCycle
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-}
-
-private extension TabBarViewContorller {
-    // MARK: - Private methods
-    func setupItems() {
-        view.backgroundColor = R.color.bg()
+        let controllers = viewModel.controllers()
+        self.setViewControllers(controllers, animated: false)
     }
 }

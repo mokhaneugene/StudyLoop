@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		442919BC27456DFB0046872F /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442919BB27456DFB0046872F /* Int+Extensions.swift */; };
+		443F6E8E2745546100F9E24C /* ThumbLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443F6E8D2745546100F9E24C /* ThumbLayer.swift */; };
 		448403B22736A458009EE201 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448403B12736A458009EE201 /* AppDelegate.swift */; };
 		448403BB2736A45A009EE201 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 448403BA2736A45A009EE201 /* Assets.xcassets */; };
 		448403BE2736A45A009EE201 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 448403BC2736A45A009EE201 /* LaunchScreen.storyboard */; };
@@ -18,12 +20,27 @@
 		448403F32736B54D009EE201 /* TabBarFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448403F22736B54D009EE201 /* TabBarFactory.swift */; };
 		44C0ED482736F0D500A4294D /* Rswift in Frameworks */ = {isa = PBXBuildFile; productRef = 44C0ED472736F0D500A4294D /* Rswift */; };
 		44C0ED4B2736F21700A4294D /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C0ED4A2736F21700A4294D /* R.generated.swift */; };
+		44C0ED4F2736F2D100A4294D /* MyWordsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C0ED4E2736F2D100A4294D /* MyWordsFactory.swift */; };
+		44C0ED512736F33300A4294D /* MyWordsResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C0ED502736F33300A4294D /* MyWordsResources.swift */; };
+		44C0ED532736F35400A4294D /* MyWordsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C0ED522736F35400A4294D /* MyWordsViewModel.swift */; };
+		44C0ED552736F38A00A4294D /* MyWordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C0ED542736F38A00A4294D /* MyWordsViewController.swift */; };
+		44C0ED582736F41B00A4294D /* SettingsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C0ED572736F41B00A4294D /* SettingsFactory.swift */; };
+		44C0ED5A2736F47200A4294D /* SettingsResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C0ED592736F47200A4294D /* SettingsResources.swift */; };
+		44C0ED5C2736F48400A4294D /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C0ED5B2736F48400A4294D /* SettingsViewModel.swift */; };
+		44C0ED5E2736F4B500A4294D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C0ED5D2736F4B500A4294D /* SettingsViewController.swift */; };
+		44C0ED612736F5EA00A4294D /* MyWordsFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C0ED602736F5EA00A4294D /* MyWordsFlow.swift */; };
+		44C0ED632736F65900A4294D /* SettingsFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C0ED622736F65900A4294D /* SettingsFlow.swift */; };
+		44C0ED662736FA1200A4294D /* MainFlow+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C0ED652736FA1200A4294D /* MainFlow+Appearance.swift */; };
+		44C0ED69273854D200A4294D /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C0ED68273854D200A4294D /* ClockView.swift */; };
+		44C0ED6C27385DE200A4294D /* UILabel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C0ED6B27385DE200A4294D /* UILabel+Extensions.swift */; };
 		8B5105E31658DCBA7EAB2272 /* Pods_StudyLoop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39BD577421C67135728FD141 /* Pods_StudyLoop.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		12DDD310D2A70539F711ABD5 /* Pods-StudyLoop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyLoop.release.xcconfig"; path = "Target Support Files/Pods-StudyLoop/Pods-StudyLoop.release.xcconfig"; sourceTree = "<group>"; };
 		39BD577421C67135728FD141 /* Pods_StudyLoop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StudyLoop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		442919BB27456DFB0046872F /* Int+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
+		443F6E8D2745546100F9E24C /* ThumbLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbLayer.swift; sourceTree = "<group>"; };
 		448403AE2736A458009EE201 /* StudyLoop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudyLoop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		448403B12736A458009EE201 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		448403BA2736A45A009EE201 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -35,6 +52,19 @@
 		448403F02736B538009EE201 /* TabBarResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarResources.swift; sourceTree = "<group>"; };
 		448403F22736B54D009EE201 /* TabBarFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarFactory.swift; sourceTree = "<group>"; };
 		44C0ED4A2736F21700A4294D /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		44C0ED4E2736F2D100A4294D /* MyWordsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWordsFactory.swift; sourceTree = "<group>"; };
+		44C0ED502736F33300A4294D /* MyWordsResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWordsResources.swift; sourceTree = "<group>"; };
+		44C0ED522736F35400A4294D /* MyWordsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWordsViewModel.swift; sourceTree = "<group>"; };
+		44C0ED542736F38A00A4294D /* MyWordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWordsViewController.swift; sourceTree = "<group>"; };
+		44C0ED572736F41B00A4294D /* SettingsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsFactory.swift; sourceTree = "<group>"; };
+		44C0ED592736F47200A4294D /* SettingsResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsResources.swift; sourceTree = "<group>"; };
+		44C0ED5B2736F48400A4294D /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		44C0ED5D2736F4B500A4294D /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		44C0ED602736F5EA00A4294D /* MyWordsFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWordsFlow.swift; sourceTree = "<group>"; };
+		44C0ED622736F65900A4294D /* SettingsFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsFlow.swift; sourceTree = "<group>"; };
+		44C0ED652736FA1200A4294D /* MainFlow+Appearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainFlow+Appearance.swift"; sourceTree = "<group>"; };
+		44C0ED68273854D200A4294D /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
+		44C0ED6B27385DE200A4294D /* UILabel+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extensions.swift"; sourceTree = "<group>"; };
 		660C4CF2C0D9853E469B1507 /* Pods-StudyLoop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyLoop.debug.xcconfig"; path = "Target Support Files/Pods-StudyLoop/Pods-StudyLoop.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -52,6 +82,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		443F6E8C2745545300F9E24C /* ThumbLayer */ = {
+			isa = PBXGroup;
+			children = (
+				443F6E8D2745546100F9E24C /* ThumbLayer.swift */,
+			);
+			path = ThumbLayer;
+			sourceTree = "<group>";
+		};
 		448403A52736A458009EE201 = {
 			isa = PBXGroup;
 			children = (
@@ -94,7 +132,9 @@
 		448403E72736B1F4009EE201 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				448403EB2736B4B4009EE201 /* TabBarController */,
+				44C0ED6A27385DD400A4294D /* Extensions */,
+				44C0ED67273854A700A4294D /* Views */,
+				44C0ED4C2736F2AF00A4294D /* Controllers */,
 				448403E82736B2C1009EE201 /* MainFlow */,
 			);
 			path = Source;
@@ -103,6 +143,7 @@
 		448403E82736B2C1009EE201 /* MainFlow */ = {
 			isa = PBXGroup;
 			children = (
+				44C0ED642736F9FA00A4294D /* Extensions */,
 				448403E92736B2D0009EE201 /* MainFlow.swift */,
 			);
 			path = MainFlow;
@@ -117,6 +158,74 @@
 				448403EC2736B4CF009EE201 /* TabBarViewController.swift */,
 			);
 			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		44C0ED4C2736F2AF00A4294D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				44C0ED562736F40C00A4294D /* SettingsController */,
+				44C0ED4D2736F2B700A4294D /* MyWordsController */,
+				448403EB2736B4B4009EE201 /* TabBarController */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		44C0ED4D2736F2B700A4294D /* MyWordsController */ = {
+			isa = PBXGroup;
+			children = (
+				44C0ED602736F5EA00A4294D /* MyWordsFlow.swift */,
+				44C0ED4E2736F2D100A4294D /* MyWordsFactory.swift */,
+				44C0ED502736F33300A4294D /* MyWordsResources.swift */,
+				44C0ED522736F35400A4294D /* MyWordsViewModel.swift */,
+				44C0ED542736F38A00A4294D /* MyWordsViewController.swift */,
+			);
+			path = MyWordsController;
+			sourceTree = "<group>";
+		};
+		44C0ED562736F40C00A4294D /* SettingsController */ = {
+			isa = PBXGroup;
+			children = (
+				44C0ED622736F65900A4294D /* SettingsFlow.swift */,
+				44C0ED572736F41B00A4294D /* SettingsFactory.swift */,
+				44C0ED592736F47200A4294D /* SettingsResources.swift */,
+				44C0ED5B2736F48400A4294D /* SettingsViewModel.swift */,
+				44C0ED5D2736F4B500A4294D /* SettingsViewController.swift */,
+			);
+			path = SettingsController;
+			sourceTree = "<group>";
+		};
+		44C0ED642736F9FA00A4294D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				44C0ED652736FA1200A4294D /* MainFlow+Appearance.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		44C0ED67273854A700A4294D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				44C0ED6D2739895100A4294D /* ClockView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		44C0ED6A27385DD400A4294D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				44C0ED6B27385DE200A4294D /* UILabel+Extensions.swift */,
+				442919BB27456DFB0046872F /* Int+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		44C0ED6D2739895100A4294D /* ClockView */ = {
+			isa = PBXGroup;
+			children = (
+				443F6E8C2745545300F9E24C /* ThumbLayer */,
+				44C0ED68273854D200A4294D /* ClockView.swift */,
+			);
+			path = ClockView;
 			sourceTree = "<group>";
 		};
 		7BC111311712C18AE9708F8F /* Pods */ = {
@@ -261,13 +370,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44C0ED6C27385DE200A4294D /* UILabel+Extensions.swift in Sources */,
+				44C0ED69273854D200A4294D /* ClockView.swift in Sources */,
 				448403EF2736B522009EE201 /* TabBarViewModel.swift in Sources */,
+				44C0ED582736F41B00A4294D /* SettingsFactory.swift in Sources */,
+				44C0ED552736F38A00A4294D /* MyWordsViewController.swift in Sources */,
 				44C0ED4B2736F21700A4294D /* R.generated.swift in Sources */,
+				44C0ED4F2736F2D100A4294D /* MyWordsFactory.swift in Sources */,
+				442919BC27456DFB0046872F /* Int+Extensions.swift in Sources */,
+				44C0ED632736F65900A4294D /* SettingsFlow.swift in Sources */,
+				44C0ED662736FA1200A4294D /* MainFlow+Appearance.swift in Sources */,
 				448403ED2736B4CF009EE201 /* TabBarViewController.swift in Sources */,
 				448403F12736B538009EE201 /* TabBarResources.swift in Sources */,
+				44C0ED5A2736F47200A4294D /* SettingsResources.swift in Sources */,
+				44C0ED5E2736F4B500A4294D /* SettingsViewController.swift in Sources */,
+				44C0ED512736F33300A4294D /* MyWordsResources.swift in Sources */,
+				443F6E8E2745546100F9E24C /* ThumbLayer.swift in Sources */,
 				448403EA2736B2D0009EE201 /* MainFlow.swift in Sources */,
+				44C0ED612736F5EA00A4294D /* MyWordsFlow.swift in Sources */,
 				448403F32736B54D009EE201 /* TabBarFactory.swift in Sources */,
+				44C0ED532736F35400A4294D /* MyWordsViewModel.swift in Sources */,
 				448403B22736A458009EE201 /* AppDelegate.swift in Sources */,
+				44C0ED5C2736F48400A4294D /* SettingsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,8 +539,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -426,7 +552,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -444,8 +570,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,7 +583,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

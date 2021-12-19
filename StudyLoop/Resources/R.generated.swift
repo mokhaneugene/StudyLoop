@@ -105,12 +105,20 @@ struct R: Rswift.Validatable {
   }
   #endif
 
-  /// This `R.color` struct is generated, and contains static references to 2 colors.
+  /// This `R.color` struct is generated, and contains static references to 6 colors.
   struct color {
     /// Color `AccentColor`.
     static let accentColor = Rswift.ColorResource(bundle: R.hostingBundle, name: "AccentColor")
     /// Color `bg`.
     static let bg = Rswift.ColorResource(bundle: R.hostingBundle, name: "bg")
+    /// Color `outsideGrayColor`.
+    static let outsideGrayColor = Rswift.ColorResource(bundle: R.hostingBundle, name: "outsideGrayColor")
+    /// Color `purple`.
+    static let purple = Rswift.ColorResource(bundle: R.hostingBundle, name: "purple")
+    /// Color `radialGradientInside`.
+    static let radialGradientInside = Rswift.ColorResource(bundle: R.hostingBundle, name: "radialGradientInside")
+    /// Color `radialGradientOutside`.
+    static let radialGradientOutside = Rswift.ColorResource(bundle: R.hostingBundle, name: "radialGradientOutside")
 
     #if os(iOS) || os(tvOS)
     /// `UIColor(named: "AccentColor", bundle: ..., traitCollection: ...)`
@@ -130,6 +138,42 @@ struct R: Rswift.Validatable {
     }
     #endif
 
+    #if os(iOS) || os(tvOS)
+    /// `UIColor(named: "outsideGrayColor", bundle: ..., traitCollection: ...)`
+    @available(tvOS 11.0, *)
+    @available(iOS 11.0, *)
+    static func outsideGrayColor(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.outsideGrayColor, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIColor(named: "purple", bundle: ..., traitCollection: ...)`
+    @available(tvOS 11.0, *)
+    @available(iOS 11.0, *)
+    static func purple(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.purple, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIColor(named: "radialGradientInside", bundle: ..., traitCollection: ...)`
+    @available(tvOS 11.0, *)
+    @available(iOS 11.0, *)
+    static func radialGradientInside(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.radialGradientInside, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIColor(named: "radialGradientOutside", bundle: ..., traitCollection: ...)`
+    @available(tvOS 11.0, *)
+    @available(iOS 11.0, *)
+    static func radialGradientOutside(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.radialGradientOutside, compatibleWith: traitCollection)
+    }
+    #endif
+
     #if os(watchOS)
     /// `UIColor(named: "AccentColor", bundle: ..., traitCollection: ...)`
     @available(watchOSApplicationExtension 4.0, *)
@@ -143,6 +187,80 @@ struct R: Rswift.Validatable {
     @available(watchOSApplicationExtension 4.0, *)
     static func bg(_: Void = ()) -> UIKit.UIColor? {
       return UIKit.UIColor(named: R.color.bg.name)
+    }
+    #endif
+
+    #if os(watchOS)
+    /// `UIColor(named: "outsideGrayColor", bundle: ..., traitCollection: ...)`
+    @available(watchOSApplicationExtension 4.0, *)
+    static func outsideGrayColor(_: Void = ()) -> UIKit.UIColor? {
+      return UIKit.UIColor(named: R.color.outsideGrayColor.name)
+    }
+    #endif
+
+    #if os(watchOS)
+    /// `UIColor(named: "purple", bundle: ..., traitCollection: ...)`
+    @available(watchOSApplicationExtension 4.0, *)
+    static func purple(_: Void = ()) -> UIKit.UIColor? {
+      return UIKit.UIColor(named: R.color.purple.name)
+    }
+    #endif
+
+    #if os(watchOS)
+    /// `UIColor(named: "radialGradientInside", bundle: ..., traitCollection: ...)`
+    @available(watchOSApplicationExtension 4.0, *)
+    static func radialGradientInside(_: Void = ()) -> UIKit.UIColor? {
+      return UIKit.UIColor(named: R.color.radialGradientInside.name)
+    }
+    #endif
+
+    #if os(watchOS)
+    /// `UIColor(named: "radialGradientOutside", bundle: ..., traitCollection: ...)`
+    @available(watchOSApplicationExtension 4.0, *)
+    static func radialGradientOutside(_: Void = ()) -> UIKit.UIColor? {
+      return UIKit.UIColor(named: R.color.radialGradientOutside.name)
+    }
+    #endif
+
+    fileprivate init() {}
+  }
+
+  /// This `R.image` struct is generated, and contains static references to 4 images.
+  struct image {
+    /// Image `moon-icon`.
+    static let moonIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "moon-icon")
+    /// Image `myWords-icon`.
+    static let myWordsIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "myWords-icon")
+    /// Image `settings-icon`.
+    static let settingsIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "settings-icon")
+    /// Image `sunny-icon`.
+    static let sunnyIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "sunny-icon")
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "moon-icon", bundle: ..., traitCollection: ...)`
+    static func moonIcon(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.moonIcon, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "myWords-icon", bundle: ..., traitCollection: ...)`
+    static func myWordsIcon(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.myWordsIcon, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "settings-icon", bundle: ..., traitCollection: ...)`
+    static func settingsIcon(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.settingsIcon, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "sunny-icon", bundle: ..., traitCollection: ...)`
+    static func sunnyIcon(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.sunnyIcon, compatibleWith: traitCollection)
     }
     #endif
 

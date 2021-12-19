@@ -16,25 +16,39 @@ final class MainFlow {
     init(window: UIWindow?) {
         self.window = window
 
-        self.launch()
+        launch()
     }
 
     // MARK: - Public methods
     func start() {
-        self.window?.rootViewController = self.rootVC
+        window?.rootViewController = rootVC
     }
 }
 
 private extension MainFlow {
     // MARK: - Private methods
     func launch() {
-        let viewController = self.createTabBarController()
+        let viewController = createTabBarController()
         rootVC = UINavigationController(rootViewController: viewController)
+
+        let appearance = UITabBarAppearance()
+        configureTabBarAppearance(appearance: appearance)
     }
 
     // TabBarController
     func createTabBarController() -> UITabBarController {
-        let handlers = TabBarResources.Handlers()
+        let innerMyWordsFlow = MyWordsFlow()
+        let myWordsController = innerMyWordsFlow.makeStartFlow()
+
+        let innerSettingsFlow = SettingsFlow()
+        let settingsController = innerSettingsFlow.makeStartFlow()
+
+        let items = TabBarResources.ItemController(myWords: myWordsController, settings: settingsController)
+        let handlers = TabBarResources.Handlers(
+            controllers: { () -> TabBarResources.ItemController in
+                return items
+            }
+        )
         return TabBarFactory().makeController(handlers: handlers)
     }
 }
