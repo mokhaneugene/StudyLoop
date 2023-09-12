@@ -105,12 +105,14 @@ struct R: Rswift.Validatable {
   }
   #endif
 
-  /// This `R.color` struct is generated, and contains static references to 6 colors.
+  /// This `R.color` struct is generated, and contains static references to 7 colors.
   struct color {
     /// Color `AccentColor`.
     static let accentColor = Rswift.ColorResource(bundle: R.hostingBundle, name: "AccentColor")
     /// Color `bg`.
     static let bg = Rswift.ColorResource(bundle: R.hostingBundle, name: "bg")
+    /// Color `gray`.
+    static let gray = Rswift.ColorResource(bundle: R.hostingBundle, name: "gray")
     /// Color `outsideGrayColor`.
     static let outsideGrayColor = Rswift.ColorResource(bundle: R.hostingBundle, name: "outsideGrayColor")
     /// Color `purple`.
@@ -135,6 +137,15 @@ struct R: Rswift.Validatable {
     @available(iOS 11.0, *)
     static func bg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
       return UIKit.UIColor(resource: R.color.bg, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIColor(named: "gray", bundle: ..., traitCollection: ...)`
+    @available(tvOS 11.0, *)
+    @available(iOS 11.0, *)
+    static func gray(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.gray, compatibleWith: traitCollection)
     }
     #endif
 
@@ -191,6 +202,14 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(watchOS)
+    /// `UIColor(named: "gray", bundle: ..., traitCollection: ...)`
+    @available(watchOSApplicationExtension 4.0, *)
+    static func gray(_: Void = ()) -> UIKit.UIColor? {
+      return UIKit.UIColor(named: R.color.gray.name)
+    }
+    #endif
+
+    #if os(watchOS)
     /// `UIColor(named: "outsideGrayColor", bundle: ..., traitCollection: ...)`
     @available(watchOSApplicationExtension 4.0, *)
     static func outsideGrayColor(_: Void = ()) -> UIKit.UIColor? {
@@ -225,8 +244,10 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.image` struct is generated, and contains static references to 4 images.
+  /// This `R.image` struct is generated, and contains static references to 5 images.
   struct image {
+    /// Image `arrow-icon`.
+    static let arrowIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "arrow-icon")
     /// Image `moon-icon`.
     static let moonIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "moon-icon")
     /// Image `myWords-icon`.
@@ -235,6 +256,13 @@ struct R: Rswift.Validatable {
     static let settingsIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "settings-icon")
     /// Image `sunny-icon`.
     static let sunnyIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "sunny-icon")
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "arrow-icon", bundle: ..., traitCollection: ...)`
+    static func arrowIcon(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.arrowIcon, compatibleWith: traitCollection)
+    }
+    #endif
 
     #if os(iOS) || os(tvOS)
     /// `UIImage(named: "moon-icon", bundle: ..., traitCollection: ...)`

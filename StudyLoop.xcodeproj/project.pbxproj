@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		442919BC27456DFB0046872F /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442919BB27456DFB0046872F /* Int+Extensions.swift */; };
+		442A8A3D2770E93E0082C865 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442A8A3C2770E93E0082C865 /* SettingsCell.swift */; };
+		442A8A3F2770E9560082C865 /* SettingsCell+Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442A8A3E2770E9560082C865 /* SettingsCell+Model.swift */; };
+		442A8A412770EDF50082C865 /* Array+Safe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442A8A402770EDF50082C865 /* Array+Safe.swift */; };
 		443F6E8E2745546100F9E24C /* ThumbLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443F6E8D2745546100F9E24C /* ThumbLayer.swift */; };
 		448403B22736A458009EE201 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448403B12736A458009EE201 /* AppDelegate.swift */; };
 		448403BB2736A45A009EE201 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 448403BA2736A45A009EE201 /* Assets.xcassets */; };
@@ -33,13 +36,45 @@
 		44C0ED662736FA1200A4294D /* MainFlow+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C0ED652736FA1200A4294D /* MainFlow+Appearance.swift */; };
 		44C0ED69273854D200A4294D /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C0ED68273854D200A4294D /* ClockView.swift */; };
 		44C0ED6C27385DE200A4294D /* UILabel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C0ED6B27385DE200A4294D /* UILabel+Extensions.swift */; };
-		8B5105E31658DCBA7EAB2272 /* Pods_StudyLoop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39BD577421C67135728FD141 /* Pods_StudyLoop.framework */; };
+		44DA77DF278B3B7100D39409 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44DA77DE278B3B7100D39409 /* WidgetKit.framework */; };
+		44DA77E1278B3B7100D39409 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44DA77E0278B3B7100D39409 /* SwiftUI.framework */; };
+		44DA77E4278B3B7100D39409 /* StudyLoopWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DA77E3278B3B7100D39409 /* StudyLoopWidget.swift */; };
+		44DA77E7278B3B7300D39409 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44DA77E6278B3B7300D39409 /* Assets.xcassets */; };
+		44DA77E9278B3B7300D39409 /* StudyLoopWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 44DA77E5278B3B7100D39409 /* StudyLoopWidget.intentdefinition */; };
+		44DA77EA278B3B7300D39409 /* StudyLoopWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 44DA77E5278B3B7100D39409 /* StudyLoopWidget.intentdefinition */; };
+		44DA77ED278B3B7300D39409 /* StudyLoopWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 44DA77DD278B3B7100D39409 /* StudyLoopWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		44DA77F3278B3E7600D39409 /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DA77F2278B3E7600D39409 /* SettingsManager.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		44DA77EB278B3B7300D39409 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 448403A62736A458009EE201 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44DA77DC278B3B7100D39409;
+			remoteInfo = StudyLoopWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		44DA77F1278B3B7300D39409 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				44DA77ED278B3B7300D39409 /* StudyLoopWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		12DDD310D2A70539F711ABD5 /* Pods-StudyLoop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyLoop.release.xcconfig"; path = "Target Support Files/Pods-StudyLoop/Pods-StudyLoop.release.xcconfig"; sourceTree = "<group>"; };
-		39BD577421C67135728FD141 /* Pods_StudyLoop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StudyLoop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		442919BB27456DFB0046872F /* Int+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
+		442A8A3C2770E93E0082C865 /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
+		442A8A3E2770E9560082C865 /* SettingsCell+Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SettingsCell+Model.swift"; sourceTree = "<group>"; };
+		442A8A402770EDF50082C865 /* Array+Safe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Safe.swift"; sourceTree = "<group>"; };
 		443F6E8D2745546100F9E24C /* ThumbLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbLayer.swift; sourceTree = "<group>"; };
 		448403AE2736A458009EE201 /* StudyLoop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudyLoop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		448403B12736A458009EE201 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -65,7 +100,14 @@
 		44C0ED652736FA1200A4294D /* MainFlow+Appearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainFlow+Appearance.swift"; sourceTree = "<group>"; };
 		44C0ED68273854D200A4294D /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
 		44C0ED6B27385DE200A4294D /* UILabel+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extensions.swift"; sourceTree = "<group>"; };
-		660C4CF2C0D9853E469B1507 /* Pods-StudyLoop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyLoop.debug.xcconfig"; path = "Target Support Files/Pods-StudyLoop/Pods-StudyLoop.debug.xcconfig"; sourceTree = "<group>"; };
+		44DA77DD278B3B7100D39409 /* StudyLoopWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = StudyLoopWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		44DA77DE278B3B7100D39409 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		44DA77E0278B3B7100D39409 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		44DA77E3278B3B7100D39409 /* StudyLoopWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyLoopWidget.swift; sourceTree = "<group>"; };
+		44DA77E5278B3B7100D39409 /* StudyLoopWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = StudyLoopWidget.intentdefinition; sourceTree = "<group>"; };
+		44DA77E6278B3B7300D39409 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		44DA77E8278B3B7300D39409 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44DA77F2278B3E7600D39409 /* SettingsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,13 +117,30 @@
 			files = (
 				44C0ED482736F0D500A4294D /* Rswift in Frameworks */,
 				448403D72736ADE2009EE201 /* SnapKit in Frameworks */,
-				8B5105E31658DCBA7EAB2272 /* Pods_StudyLoop.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44DA77DA278B3B7100D39409 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44DA77E1278B3B7100D39409 /* SwiftUI.framework in Frameworks */,
+				44DA77DF278B3B7100D39409 /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		442A8A3B2770E9030082C865 /* SettingsCell */ = {
+			isa = PBXGroup;
+			children = (
+				442A8A3E2770E9560082C865 /* SettingsCell+Model.swift */,
+				442A8A3C2770E93E0082C865 /* SettingsCell.swift */,
+			);
+			path = SettingsCell;
+			sourceTree = "<group>";
+		};
 		443F6E8C2745545300F9E24C /* ThumbLayer */ = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				448403B02736A458009EE201 /* StudyLoop */,
+				44DA77E2278B3B7100D39409 /* StudyLoopWidget */,
 				448403AF2736A458009EE201 /* Products */,
 				7BC111311712C18AE9708F8F /* Pods */,
 				F0CB7E26B4A65522D3819F8F /* Frameworks */,
@@ -104,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				448403AE2736A458009EE201 /* StudyLoop.app */,
+				44DA77DD278B3B7100D39409 /* StudyLoopWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -133,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				44C0ED6A27385DD400A4294D /* Extensions */,
+				44DA77D8278B3B1A00D39409 /* Managers */,
 				44C0ED67273854A700A4294D /* Views */,
 				44C0ED4C2736F2AF00A4294D /* Controllers */,
 				448403E82736B2C1009EE201 /* MainFlow */,
@@ -205,6 +267,7 @@
 		44C0ED67273854A700A4294D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				442A8A3B2770E9030082C865 /* SettingsCell */,
 				44C0ED6D2739895100A4294D /* ClockView */,
 			);
 			path = Views;
@@ -215,6 +278,7 @@
 			children = (
 				44C0ED6B27385DE200A4294D /* UILabel+Extensions.swift */,
 				442919BB27456DFB0046872F /* Int+Extensions.swift */,
+				442A8A402770EDF50082C865 /* Array+Safe.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -228,11 +292,28 @@
 			path = ClockView;
 			sourceTree = "<group>";
 		};
+		44DA77D8278B3B1A00D39409 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				44DA77F2278B3E7600D39409 /* SettingsManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		44DA77E2278B3B7100D39409 /* StudyLoopWidget */ = {
+			isa = PBXGroup;
+			children = (
+				44DA77E3278B3B7100D39409 /* StudyLoopWidget.swift */,
+				44DA77E5278B3B7100D39409 /* StudyLoopWidget.intentdefinition */,
+				44DA77E6278B3B7300D39409 /* Assets.xcassets */,
+				44DA77E8278B3B7300D39409 /* Info.plist */,
+			);
+			path = StudyLoopWidget;
+			sourceTree = "<group>";
+		};
 		7BC111311712C18AE9708F8F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				660C4CF2C0D9853E469B1507 /* Pods-StudyLoop.debug.xcconfig */,
-				12DDD310D2A70539F711ABD5 /* Pods-StudyLoop.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -240,7 +321,8 @@
 		F0CB7E26B4A65522D3819F8F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				39BD577421C67135728FD141 /* Pods_StudyLoop.framework */,
+				44DA77DE278B3B7100D39409 /* WidgetKit.framework */,
+				44DA77E0278B3B7100D39409 /* SwiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -253,14 +335,15 @@
 			buildConfigurationList = 448403C22736A45A009EE201 /* Build configuration list for PBXNativeTarget "StudyLoop" */;
 			buildPhases = (
 				44C0ED492736F0DB00A4294D /* R.swift Script */,
-				52FCDD84A502E456C800852E /* [CP] Check Pods Manifest.lock */,
 				448403AA2736A458009EE201 /* Sources */,
 				448403AB2736A458009EE201 /* Frameworks */,
 				448403AC2736A458009EE201 /* Resources */,
+				44DA77F1278B3B7300D39409 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				44DA77EC278B3B7300D39409 /* PBXTargetDependency */,
 			);
 			name = StudyLoop;
 			packageProductDependencies = (
@@ -271,6 +354,23 @@
 			productReference = 448403AE2736A458009EE201 /* StudyLoop.app */;
 			productType = "com.apple.product-type.application";
 		};
+		44DA77DC278B3B7100D39409 /* StudyLoopWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44DA77EE278B3B7300D39409 /* Build configuration list for PBXNativeTarget "StudyLoopWidgetExtension" */;
+			buildPhases = (
+				44DA77D9278B3B7100D39409 /* Sources */,
+				44DA77DA278B3B7100D39409 /* Frameworks */,
+				44DA77DB278B3B7100D39409 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StudyLoopWidgetExtension;
+			productName = StudyLoopWidgetExtension;
+			productReference = 44DA77DD278B3B7100D39409 /* StudyLoopWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -278,11 +378,14 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1300;
-				LastUpgradeCheck = 1300;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1410;
 				TargetAttributes = {
 					448403AD2736A458009EE201 = {
 						CreatedOnToolsVersion = 13.0;
+					};
+					44DA77DC278B3B7100D39409 = {
+						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
 			};
@@ -296,14 +399,15 @@
 			);
 			mainGroup = 448403A52736A458009EE201;
 			packageReferences = (
-				448403D52736ADE2009EE201 /* XCRemoteSwiftPackageReference "SnapKit" */,
-				44C0ED462736F0D500A4294D /* XCRemoteSwiftPackageReference "R.swift" */,
+				448403D52736ADE2009EE201 /* XCRemoteSwiftPackageReference "SnapKit.git" */,
+				44C0ED462736F0D500A4294D /* XCRemoteSwiftPackageReference "R.swift.Library" */,
 			);
 			productRefGroup = 448403AF2736A458009EE201 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				448403AD2736A458009EE201 /* StudyLoop */,
+				44DA77DC278B3B7100D39409 /* StudyLoopWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -315,6 +419,14 @@
 			files = (
 				448403BE2736A45A009EE201 /* LaunchScreen.storyboard in Resources */,
 				448403BB2736A45A009EE201 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44DA77DB278B3B7100D39409 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44DA77E7278B3B7300D39409 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,33 +447,11 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				$SRCROOT/StudyLoop/Resources/R.generated.swift,
+				"$SRCROOT/StudyLoop/Resources/R.generated.swift",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"$SRCROOT/StudyLoop/Resources/rswift\" generate \"$SRCROOT/StudyLoop/Resources/R.generated.swift\"\n";
-		};
-		52FCDD84A502E456C800852E /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-StudyLoop-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -370,6 +460,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				442A8A3D2770E93E0082C865 /* SettingsCell.swift in Sources */,
 				44C0ED6C27385DE200A4294D /* UILabel+Extensions.swift in Sources */,
 				44C0ED69273854D200A4294D /* ClockView.swift in Sources */,
 				448403EF2736B522009EE201 /* TabBarViewModel.swift in Sources */,
@@ -377,12 +468,16 @@
 				44C0ED552736F38A00A4294D /* MyWordsViewController.swift in Sources */,
 				44C0ED4B2736F21700A4294D /* R.generated.swift in Sources */,
 				44C0ED4F2736F2D100A4294D /* MyWordsFactory.swift in Sources */,
+				442A8A3F2770E9560082C865 /* SettingsCell+Model.swift in Sources */,
 				442919BC27456DFB0046872F /* Int+Extensions.swift in Sources */,
 				44C0ED632736F65900A4294D /* SettingsFlow.swift in Sources */,
+				442A8A412770EDF50082C865 /* Array+Safe.swift in Sources */,
+				44DA77EA278B3B7300D39409 /* StudyLoopWidget.intentdefinition in Sources */,
 				44C0ED662736FA1200A4294D /* MainFlow+Appearance.swift in Sources */,
 				448403ED2736B4CF009EE201 /* TabBarViewController.swift in Sources */,
 				448403F12736B538009EE201 /* TabBarResources.swift in Sources */,
 				44C0ED5A2736F47200A4294D /* SettingsResources.swift in Sources */,
+				44DA77F3278B3E7600D39409 /* SettingsManager.swift in Sources */,
 				44C0ED5E2736F4B500A4294D /* SettingsViewController.swift in Sources */,
 				44C0ED512736F33300A4294D /* MyWordsResources.swift in Sources */,
 				443F6E8E2745546100F9E24C /* ThumbLayer.swift in Sources */,
@@ -395,7 +490,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		44DA77D9278B3B7100D39409 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44DA77E9278B3B7300D39409 /* StudyLoopWidget.intentdefinition in Sources */,
+				44DA77E4278B3B7100D39409 /* StudyLoopWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		44DA77EC278B3B7300D39409 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44DA77DC278B3B7100D39409 /* StudyLoopWidgetExtension */;
+			targetProxy = 44DA77EB278B3B7300D39409 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		448403BC2736A45A009EE201 /* LaunchScreen.storyboard */ = {
@@ -527,8 +639,8 @@
 		};
 		448403C32736A45A009EE201 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 660C4CF2C0D9853E469B1507 /* Pods-StudyLoop.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -558,8 +670,8 @@
 		};
 		448403C42736A45A009EE201 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 12DDD310D2A70539F711ABD5 /* Pods-StudyLoop.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -587,6 +699,62 @@
 			};
 			name = Release;
 		};
+		44DA77EF278B3B7300D39409 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 37S8MMUAB7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StudyLoopWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = StudyLoopWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mokhaneugene.StudyLoop.StudyLoopWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		44DA77F0278B3B7300D39409 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 37S8MMUAB7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StudyLoopWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = StudyLoopWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mokhaneugene.StudyLoop.StudyLoopWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -608,10 +776,19 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		44DA77EE278B3B7300D39409 /* Build configuration list for PBXNativeTarget "StudyLoopWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44DA77EF278B3B7300D39409 /* Debug */,
+				44DA77F0278B3B7300D39409 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		448403D52736ADE2009EE201 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+		448403D52736ADE2009EE201 /* XCRemoteSwiftPackageReference "SnapKit.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
 			requirement = {
@@ -619,7 +796,7 @@
 				kind = branch;
 			};
 		};
-		44C0ED462736F0D500A4294D /* XCRemoteSwiftPackageReference "R.swift" */ = {
+		44C0ED462736F0D500A4294D /* XCRemoteSwiftPackageReference "R.swift.Library" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/mac-cain13/R.swift.Library";
 			requirement = {
@@ -632,12 +809,12 @@
 /* Begin XCSwiftPackageProductDependency section */
 		448403D62736ADE2009EE201 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 448403D52736ADE2009EE201 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			package = 448403D52736ADE2009EE201 /* XCRemoteSwiftPackageReference "SnapKit.git" */;
 			productName = SnapKit;
 		};
 		44C0ED472736F0D500A4294D /* Rswift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 44C0ED462736F0D500A4294D /* XCRemoteSwiftPackageReference "R.swift" */;
+			package = 44C0ED462736F0D500A4294D /* XCRemoteSwiftPackageReference "R.swift.Library" */;
 			productName = Rswift;
 		};
 /* End XCSwiftPackageProductDependency section */
